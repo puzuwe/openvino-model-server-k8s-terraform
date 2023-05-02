@@ -19,7 +19,7 @@ variable "eks_instance_type" {
 }
 
 variable "eks_cluster_name" {
-  default = "opnvino-model-eks-cluster"
+  default = "opnvinomodelekscluster"
 }
 
 ###############################
