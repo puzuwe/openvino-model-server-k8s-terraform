@@ -12,6 +12,6 @@ terraform plan
 terraform apply
 ```
 
-It might take a while for the cluster to be created (up to 15-20 minutes).
+After creating the cluster, it may take some time for it to be fully available, typically around 15-20 minutes. 
 
-As soon as the cluster is ready, you should find a `kubeconfig_opnvinomodelekscluster` kubeconfig file in the current directory.
+Once the cluster is ready, you can locate a kubeconfig file named kubeconfig_opnvinomodelekscluster in the current directory.
