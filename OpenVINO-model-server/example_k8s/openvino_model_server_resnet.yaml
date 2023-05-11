@@ -29,9 +29,15 @@ spec:
         - name: LOG_LEVEL
           value: "DEBUG"
         - name: AWS_ACCESS_KEY_ID
-          value: AKIAW5M2DLNVDIZUZC5T
+          valueFrom:
+            secretKeyRef:
+              name: aws-secret
+              key: AWS_ACCESS_KEY_ID
         - name: AWS_SECRET_ACCESS_KEY
-          value: gRcO6MLsunvYQJNc/rCRQWwyLOCFPN6M0t+vhSOz
+          valueFrom:
+            secretKeyRef:
+              name: aws-secret
+              key: AWS_SECRET_ACCESS_KEY
         - name: AWS_DEFAULT_REGION
           value: eu-west-2
         command: ["/ie-serving-py/start_server.sh"]
